@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="daftar.css">
+</head>
+
+    <!-- ==================== NAVBAR ==================== -->
+<body>
+    <div class="header">
+        <div class="header-logo">BEASISWA</div>
+        <div class="header-navbar">
+            <ul>
+                <li><a href="pilihanbeasiswa.html" target="_blank">Pilihan Beasiswa</a></li>
+                <li><a href="daftar.html" target="_blank">Daftar</a></li>
+                <li><a href="hasil.html" target="_blank">Hasil</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== FORMULIR ==================== -->
+    <div class="container">
+        <h1>Daftar Beasiswa</h1>
+        <form id="beasiswaForm">
+            <label for="nama">Masukkan Nama</label>
+            <input type="text" id="nama" required>
+
+            <label for="email">Masukkan Email</label>
+            <input type="email" id="email" required>
+
+            <label for="nomorHP">Masukkan Nomor HP</label>
+            <input type="tel" id="nomorHP" pattern="[0-9]+" required>
+
+            <label for="semester">Pilih Semester</label>
+            <select id="semester" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <label for="ipk">IPK</label>
+            <input type="text" id="ipk" value="3.4" required>
+
+            <label for="beasiswa">Pilihan Beasiswa</label>
+            <select id="beasiswa" required>
+                <option value="1">Beasiswa Akademik</option>
+                <option value="2">Beasiswa Non Akademik</option>
+            </select>
+
+            <label for="uploadBerkas">Upload Berkas Syarat</label>
+            <input type="file" id="uploadBerkas" accept=".pdf, .jpg, .jpeg, .zip" required>
+
+            <button class="button-daftar">Daftar</button>
+            <button class="button-batal">Batal</button>
+        </form>
+    </div>
+
+    <script src="daftar.js"></script>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="footer">
+        <div class="footer-content">
+            <p>COPYRIGHT © 2023 AMANAH NUR AZ-ZAHROH. ALL RIGHTS RESERVED.</p></div>
+    </div>
+</body>
+</html>
